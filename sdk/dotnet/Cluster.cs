@@ -50,7 +50,7 @@ namespace Pulumi.K0s
             var defaultOptions = new CustomResourceOptions
             {
                 Version = Utilities.Version,
-                PluginDownloadURL = "https://repo.ydkn.io/pulumi-k0s",
+                PluginDownloadURL = "https://repo.terrxo.io/pulumi-k0s",
                 AdditionalSecretOutputs =
                 {
                     "kubeconfig",

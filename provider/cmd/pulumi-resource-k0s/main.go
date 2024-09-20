@@ -5,7 +5,7 @@ import (
 	"os"
 
 	p "github.com/pulumi/pulumi-go-provider"
-	k0s "github.com/ydkn/pulumi-k0s/provider"
+	k0s "github.com/terrxo/pulumi-k0s/provider"
 )
 
 // Serve the provider against Pulumi's Provider protocol.

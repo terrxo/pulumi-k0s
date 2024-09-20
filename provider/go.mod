@@ -1,4 +1,4 @@
-module github.com/ydkn/pulumi-k0s/provider
+module github.com/terrxo/pulumi-k0s/provider
 
 go 1.21.0
 

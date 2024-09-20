@@ -1,8 +1,8 @@
-[![Actions Status](https://github.com/ydkn/pulumi-k0s/actions/workflows/makefile.yaml/badge.svg)](https://github.com/ydkn/pulumi-k0s/actions)
-[![NPM version](https://badge.fury.io/js/%40ydkn%2Fpulumi-k0s.svg)](https://www.npmjs.com/package/@ydkn/pulumi-k0s)
+[![Actions Status](https://github.com/terrxo/pulumi-k0s/actions/workflows/makefile.yaml/badge.svg)](https://github.com/terrxo/pulumi-k0s/actions)
+[![NPM version](https://badge.fury.io/js/%40terrxo%2Fpulumi-k0s.svg)](https://www.npmjs.com/package/@terrxo/pulumi-k0s)
 [![Python version](https://badge.fury.io/py/pulumi-k0s.svg)](https://pypi.org/project/pulumi-k0s)
 [![NuGet version](https://badge.fury.io/nu/pulumi.k0s.svg)](https://badge.fury.io/nu/pulumi.k0s)
-[![PkgGoDev](https://pkg.go.dev/badge/github.com/ydkn/pulumi-k0s/sdk/go)](https://pkg.go.dev/github.com/ydkn/pulumi-k0s/sdk/go)
+[![PkgGoDev](https://pkg.go.dev/badge/github.com/terrxo/pulumi-k0s/sdk/go)](https://pkg.go.dev/github.com/terrxo/pulumi-k0s/sdk/go)
 
 # k0s Pulumi Provider
 
@@ -16,11 +16,11 @@ This package is available in many languages in the standard packaging formats.
 
 To use from JavaScript or TypeScript in Node.js, install using either `npm`:
 
-    $ npm install @ydkn/pulumi-k0s
+    $ npm install @terrxo/pulumi-k0s
 
 or `yarn`:
 
-    $ yarn add @ydkn/pulumi-k0s
+    $ yarn add @terrxo/pulumi-k0s
 
 ### Python
 
@@ -32,7 +32,7 @@ To use from Python, install using `pip`:
 
 To use from Go, use `go get` to grab the latest version of the library
 
-    $ go get github.com/ydkn/pulumi-k0s/sdk
+    $ go get github.com/terrxo/pulumi-k0s/sdk
 
 ### .NET
 

@@ -7,7 +7,7 @@ import (
 	"github.com/pulumi/pulumi/sdk/v3/go/common/resource"
 	"github.com/pulumi/pulumi/sdk/v3/go/common/tokens"
 
-	k0s "github.com/ydkn/pulumi-k0s/provider"
+	k0s "github.com/terrxo/pulumi-k0s/provider"
 )
 
 func urn(typ, name string) resource.URN {

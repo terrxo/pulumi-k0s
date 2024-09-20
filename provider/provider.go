@@ -33,12 +33,12 @@ func Provider() p.Provider {
 			DisplayName:       "k0s",
 			Description:       "A Pulumi package for creating and managing k0s clusters.",
 			Keywords:          []string{"pulumi", "kubernetes", "k0s"},
-			Homepage:          "https://github.com/ydkn/pulumi-k0s",
-			Repository:        "https://github.com/ydkn/pulumi-k0s",
+			Homepage:          "https://github.com/terrxo/pulumi-k0s",
+			Repository:        "https://github.com/terrxo/pulumi-k0s",
 			Publisher:         "Florian Schwab",
 			LogoURL:           "https://k0sproject.io/images/k0s-logo.png",
 			License:           "Apache-2.0",
-			PluginDownloadURL: "https://repo.ydkn.io/pulumi-k0s",
+			PluginDownloadURL: "https://repo.terrxo.io/pulumi-k0s",
 		},
 	})
 }

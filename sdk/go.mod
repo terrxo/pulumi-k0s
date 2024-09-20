@@ -1,4 +1,4 @@
-module github.com/ydkn/pulumi-k0s/sdk
+module github.com/terrxo/pulumi-k0s/sdk
 
 go 1.21
 

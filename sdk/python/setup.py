@@ -3,13 +3,12 @@
 # *** Do not edit by hand unless you're certain you know what you are doing! ***
 
 import errno
-import os
 from setuptools import setup, find_packages
 from setuptools.command.install import install
 from subprocess import check_call
 
 
-VERSION = os.getenv("PULUMI_PYTHON_VERSION", "0.0.0")
+VERSION = "0.0.0"
 def readme():
     try:
         with open('README.md', encoding='utf-8') as f:
@@ -25,9 +24,9 @@ setup(name='pulumi_k0s',
       long_description=readme(),
       long_description_content_type='text/markdown',
       keywords='pulumi kubernetes k0s',
-      url='https://github.com/ydkn/pulumi-k0s',
+      url='https://github.com/terrxo/pulumi-k0s',
       project_urls={
-          'Repository': 'https://github.com/ydkn/pulumi-k0s'
+          'Repository': 'https://github.com/terrxo/pulumi-k0s'
       },
       license='Apache-2.0',
       packages=find_packages(),
@@ -39,7 +38,7 @@ setup(name='pulumi_k0s',
       },
       install_requires=[
           'parver>=0.2.1',
-          'pulumi',
+          'pulumi>=3.0.0,<4.0.0',
           'semver>=2.8.1'
       ],
       zip_safe=False)

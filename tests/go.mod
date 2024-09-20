@@ -1,10 +1,10 @@
-module github.com/ydkn/pulumi-k0s/tests
+module github.com/terrxo/pulumi-k0s/tests
 
 go 1.21.0
 
 toolchain go1.21.7
 
-replace github.com/ydkn/pulumi-k0s/provider => ../provider
+replace github.com/terrxo/pulumi-k0s/provider => ../provider
 
 replace github.com/imdario/mergo => github.com/imdario/mergo v0.3.16
 
@@ -14,7 +14,7 @@ require (
 	github.com/pulumi/pulumi-go-provider/integration v0.10.0
 	github.com/pulumi/pulumi/sdk/v3 v3.107.0
 	github.com/stretchr/testify v1.8.4
-	github.com/ydkn/pulumi-k0s/provider v0.0.0-20240222184819-99199888c1d3
+	github.com/terrxo/pulumi-k0s/provider v0.0.0-20240222184819-99199888c1d3
 )
 
 require (

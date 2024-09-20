@@ -4,7 +4,7 @@ import (
 	p "github.com/pulumi/pulumi-go-provider"
 	"github.com/pulumi/pulumi-go-provider/infer"
 	"github.com/pulumi/pulumi/sdk/v3/go/common/resource"
-	"github.com/ydkn/pulumi-k0s/provider/internal/introspect"
+	"github.com/terrxo/pulumi-k0s/provider/internal/introspect"
 )
 
 type ClusterInputs struct {

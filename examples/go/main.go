@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"
-	"github.com/ydkn/pulumi-k0s/sdk/go/k0s"
+	"github.com/terrxo/pulumi-k0s/sdk/go/k0s"
 )
 
 func main() {

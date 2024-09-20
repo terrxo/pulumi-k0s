@@ -53,7 +53,7 @@ export function getVersion(): string {
 
 /** @internal */
 export function resourceOptsDefaults(): any {
-    return { version: getVersion(), pluginDownloadURL: "https://repo.ydkn.io/pulumi-k0s" };
+    return { version: getVersion(), pluginDownloadURL: "https://repo.terrxo.io/pulumi-k0s" };
 }
 
 /** @internal */

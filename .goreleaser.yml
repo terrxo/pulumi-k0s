@@ -18,7 +18,7 @@ builds:
       - linux
     ldflags:
       # The line below MUST align with the module in current provider/go.mod
-      - -X github.com/ydkn/pulumi-k0s/provider.Version={{ .Tag }}
+      - -X github.com/terrxo/pulumi-k0s/provider.Version={{ .Tag }}
     main: ./cmd/pulumi-resource-k0s/
 changelog:
   skip: true
