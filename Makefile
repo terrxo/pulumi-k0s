@@ -7,7 +7,7 @@ NODE_MODULE_NAME := @terrxo/pulumi-k0s
 NUGET_PKG_NAME   := Pulumi.K0s
 
 PROVIDER        := pulumi-resource-${PACK}
-VERSION         ?= $(shell pulumictl get version)
+VERSION         ?= v0.0.9
 PROVIDER_PATH   := provider
 VERSION_PATH    := ${PROVIDER_PATH}.Version
 
@@ -52,7 +52,7 @@ provider_debug::
 test_provider::
 	cd tests && go test -short -v -count=1 -cover -timeout 2h -parallel ${TESTPARALLELISM} ./...
 
-dotnet_sdk:: DOTNET_VERSION := $(shell pulumictl get version --language dotnet)
+dotnet_sdk:: DOTNET_VERSION := $(shell echo $(VERSION) | sed 's/^v//')
 dotnet_sdk::
 	rm -rf sdk/dotnet
 	pulumi package gen-sdk $(WORKING_DIR)/bin/$(PROVIDER) --language dotnet
@@ -65,7 +65,7 @@ go_sdk:: $(WORKING_DIR)/bin/$(PROVIDER)
 	rm -rf sdk/go
 	pulumi package gen-sdk $(WORKING_DIR)/bin/$(PROVIDER) --language go
 
-nodejs_sdk:: VERSION := $(shell pulumictl get version --language javascript)
+nodejs_sdk:: VERSION := $(shell echo $(VERSION) | sed 's/^v//')
 nodejs_sdk:: NODE_PACKAGE_NAME := $(shell echo $(NODE_MODULE_NAME) | sed -r 's/\//\\\//g')
 nodejs_sdk::
 	rm -rf sdk/nodejs
@@ -80,7 +80,7 @@ nodejs_sdk::
 		sed -i.bak 's/$${VERSION}/$(VERSION)/g' bin/package.json && \
 		rm ./bin/package.json.bak
 
-python_sdk:: PYPI_VERSION := $(shell pulumictl get version --language python)
+python_sdk:: PYPI_VERSION := $(shell echo $(VERSION) | sed 's/^v//')
 python_sdk::
 	rm -rf sdk/python
 	pulumi package gen-sdk $(WORKING_DIR)/bin/$(PROVIDER) --language python
@@ -115,6 +115,7 @@ endef
 up::
 	$(call pulumi_login) \
 	cd ${EXAMPLES_DIR} && \
+	pulumi stack rm dev -y && \
 	pulumi stack init dev && \
 	pulumi stack select dev && \
 	pulumi config set name dev && \

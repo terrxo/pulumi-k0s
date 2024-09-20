@@ -9,7 +9,7 @@ resources:
   myProvider:
     type: pulumi:providers:k0s
     properties:
-      noDrain: true
+      noDrain: "true"
   myCluster:
     type: k0s:Cluster
     properties:
