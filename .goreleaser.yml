@@ -23,7 +23,7 @@ builds:
       - -X github.com/terrxo/pulumi-k0s/provider.Version={{ .Tag }}
     main: ./cmd/pulumi-resource-k0s/
 changelog:
-  skip: true
+  disable: true
 release:
   disable: false
   prerelease: auto
